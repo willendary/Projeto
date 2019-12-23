@@ -8,24 +8,32 @@
     <script language="JavaScript" src="jscode.js"></script>
     <title>Meu teste</title>
 </head>
-<body>   
+<body>
+ <div id="divCab" class="Cabecalho">
+    <a href="index.html" id="lbHome" class="links">Home</a> 
+    <a href="QuemSomos.html" id="lbQuemSomos" class="links">Quem somos</a>
+    <a href="Contato.html" id="lbContato" class="links">Contato</a>
+    <a href="AreaRestrita.html" id="lblAreaRestrita" class="links">Área restrita</a>
+ </div>  
  <div id="div1">
-    <label id="lbl1">Digite o primeiro número:</label>
-    <input text id="n1" onkeypress="return onlynumber()"/>
+    <label id="lbl1" class="labels">Digite o primeiro número:</label>
+    <input text id="n1" class="InputText"/>
  </div>
  <div id="div2">
-    <label id="lbl1">Digite o segundo número:</label>
-    <input text id="n2"/>
- </div>      
- <div>
-     <input type="button" onclick="SomaValores()" value="Some os valores" id="btnSomar"/>
- </div>
-<div>
-    <input type="button" id="btnRandom" onclick="NumeroAleatorio()" value="Clique aqui"></input type="button">
-</div>
-<div>
-    <input type="button" id="btnMostraNome" onclick="MostraNome()" value="Clique para mostrar o nome digitado"></input type="button">
+    <label id="lbl2" class="labels">Digite o segundo número:</label>
+    <input text id="n2" class="InputText"/>
+ </div>    
+ <div id="divBotoes">
+    <input type="button" id="btnSomar" class="Buttons" onclick="SomaValores()" value="Some os valores"/>
+    <input type="button" id="btnMultiplica" class="Buttons" onclick="MultiplicaValores()" value="Multiplique os Valores"/>
+    <input type="button" id="btnSubtrai" class="Buttons" onclick="SubtraiValores()" value="Subtrair os Valores"/>
+    <input type="button" id="btnDivide" class="Buttons" onclick="DivideValores()" value="Dividir os Valores"/>
+    <input type="button" id="btnDigitaNome" class="Buttons" onclick="ObtemNome()" value="Clique aqui para digitar o seu nome"/>
+    <input type="button" id="btnMostraNome" class="Buttons" onclick="MostraNome()" value="Clique para mostrar o nome digitado"/>
+    <input type="button" id="btnGeranumero" class="Buttons" onclick="GeraNumero()" value="Gere números"/>  
 </div>   
-    
+   <div id="divMaps">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2012.1626257356656!2d-51.18094804118209!3d-29.917829787290447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95196fff834e79d3%3A0x68b6a444890257c5!2sUniversidade+La+Salle!5e0!3m2!1spt-BR!2sbr!4v1537570802349" width="100%" height="315" frameborder="0" style="border:0" allowfullscreen id="frameMaps"></iframe>
+   </div> 
 </body>
 </html>

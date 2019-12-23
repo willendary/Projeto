@@ -1,21 +1,23 @@
 body {
-    background-color:dodgerblue;
+    background-image: url("Background.png");
 }
 
 label {
     font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
     font-style: normal;
-}
-
-#div1, #div2 {
-    margin-top: 0,02cm;
-    text-align: center;
     padding: 10px 20px;
 }
 
-#btnSomar, #btnRandom, #btnMostraNome {
+#div1, #div2 {
+    background: rgba(000,000,000,0.5);
+    text-align: center;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.Buttons {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 14px;
         color: #ffffff;
@@ -38,10 +40,86 @@ label {
         text-shadow:
             0px -1px 1px rgba(000,000,000,0.2),
             0px 1px 0px rgba(255,255,255,0.3);
-        margin-left:20cm;
-        margin-top: 2cm;       
     }
 
-    #btnSomar:hover {
-    
+    .Cabecalho{
+        height: 2cm;
+        text-align: center;
+        background: -webkit-gradient(
+            linear, left top, left bottom,
+            from(#050650),
+            color-stop(0.25, #0997e9),
+            to(#050650));
+        background: linear-gradient(
+            top,
+            #050650 0%,
+            #0997e9 25%,
+            #050650);
+            line-height: 100px;
+            height: 100%;
+    }
+
+    .links {
+        font-family:cursive;
+        font-size: 30px;
+        padding: 10px;
+        color: #ffffff;
+        text-decoration: none;
+
+    }
+
+    #divBotoes {
+        text-align: center;
+        line-height: 100px;  
+    }
+
+    .InputText {
+        border: 1.5px solid #ff6600;
+        height: 20px;
+        position: absolute;        
+    }
+
+    #divMaps{
+        float: right;
+        top: 20cm;
+        left: 5cm;
+    }        
+
+
+    .Buttons:hover {
+        background: -webkit-gradient(linear, left top, left bottom,
+        from(#fff3db),
+        color-stop(0.25, #d6a81f),
+        to(#cc3709));
+        background: linear-gradient(
+            top,
+            #fff3db 0%,
+            #d6a81f 25%,
+            #cc3709);
+    }
+
+    .Buttons:active{
+        background: -webkit-gradient(
+            linear, left top, left bottom,
+            from(#fff3db),
+            color-stop(0.25, #c49a1e),
+            to(#af320c));
+        background: linear-gradient(
+            top,
+            #fff3db 0%,
+            #c49a1e 25%,
+            #af320c);
+    }
+
+
+
+    .links:hover {
+        color:rgb(6, 46, 105);
+    }
+
+    .links:active{
+        color:rgb(0, 142, 236);
+    }
+
+    #lbl1, #lbl2{
     }
